@@ -7,13 +7,13 @@ if (menuButton && navigation) {
   menuButton.addEventListener("click", () => {
     const open = navigation.classList.toggle("is-open");
     menuButton.setAttribute("aria-expanded", String(open));
-    menuButton.textContent = open ? "Close" : "Menu";
+    menuButton.textContent = window.siteLanguage?.t(open ? "Close" : "Menu") || (open ? "Close" : "Menu");
   });
 
   navigation.addEventListener("click", () => {
     navigation.classList.remove("is-open");
     menuButton.setAttribute("aria-expanded", "false");
-    menuButton.textContent = "Menu";
+    menuButton.textContent = window.siteLanguage?.t("Menu") || "Menu";
   });
 }
 
@@ -172,5 +172,8 @@ if (figures.length > 0) {
     if (e.key === "Escape") close();
     if (e.key === "ArrowLeft") open(index - 1);
     if (e.key === "ArrowRight") open(index + 1);
+  });
+  document.addEventListener("site:languagechange", () => {
+    if (box.classList.contains("is-open")) open(index);
   });
 }

@@ -1,0 +1,142 @@
+/* A compact, manually controlled window onto representative methods. */
+body.refined-page .methods-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.methods-heading h2 {
+  margin: 0;
+  font: 600 1.45rem/1.3 var(--serif);
+  color: var(--ink);
+}
+
+.methods-intro {
+  max-width: 660px;
+  margin: 0.65rem 0 1.25rem;
+  color: #62676c;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.methods-controls {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.methods-controls[hidden] { display: none; }
+
+.methods-arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--accent);
+  font: 400 1.2rem/1 var(--sans);
+  cursor: pointer;
+}
+
+.methods-arrow:hover:not(:disabled) { border-color: var(--accent); background: #eef4f7; }
+.methods-arrow:disabled { opacity: 0.35; cursor: default; }
+.methods-arrow:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.methods-position {
+  min-width: 62px;
+  color: #62676c;
+  text-align: center;
+  font: 400 0.75rem/1.4 var(--mono);
+}
+
+.methods-track {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #bccbd4 transparent;
+  padding: 2px 0 12px;
+}
+
+.methods-track:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+body.refined-page .methods-track .method-card {
+  flex: 0 0 calc((100% - 18px) / 2);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--card);
+}
+
+.method-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 196px;
+  padding: 14px;
+  border-bottom: 1px solid var(--rule);
+  background: #fff;
+  cursor: zoom-in;
+}
+
+.method-image:hover { background: #f9fbfc; }
+
+body.refined-page .methods-track .method-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+  background: #fff;
+  border: 0;
+}
+
+body.refined-page .methods-track .method-card a:hover img { transform: none; box-shadow: none; }
+
+body.refined-page .methods-track .method-card figcaption {
+  flex: 1;
+  padding: 1rem 1.1rem 1.15rem;
+  margin: 0;
+  font-family: var(--sans);
+  text-align: left;
+}
+
+.method-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+  font: 600 1rem/1.4 var(--sans);
+}
+
+.method-card p { margin: 0; color: var(--body); font-size: 0.9rem; line-height: 1.65; }
+
+/* Keep expanded figures above the sticky site header. */
+.lightbox { z-index: 1000; }
+
+@media (max-width: 600px) {
+  body.refined-page .methods-heading { align-items: center; }
+  .methods-heading h2 { font-size: 1.25rem; }
+  .methods-controls { gap: 0.25rem; }
+  .methods-arrow { width: 36px; height: 40px; }
+  .methods-position { min-width: 42px; font-size: 0.7rem; }
+  body.refined-page .methods-track .method-card { flex-basis: 100%; }
+  .method-image { height: 184px; }
+}

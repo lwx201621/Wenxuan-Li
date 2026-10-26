@@ -1,0 +1,24 @@
+/* Experience: concise research assistant contributions. */
+body.experience-page .page-hero { padding-bottom: 2rem; }
+body.experience-page .page-deck { font-size: 1rem; color: var(--body); }
+.experience-section { padding-bottom: 2.25rem; scroll-margin-top: 5rem; }
+.experience-section > h2 { margin: 0 0 0.75rem; font: 600 1.25rem/1.35 var(--serif); color: var(--ink); }
+.experience-entry { border-top: 1px solid var(--rule); padding: 1.5rem 0; }
+.experience-content { min-width: 0; }
+.experience-meta { margin: 0 0 0.4rem; color: #62676c; font: 400 0.8rem/1.55 var(--sans); }
+.experience-content h3 { margin: 0; color: var(--ink); font: 600 1.35rem/1.35 var(--serif); }
+.experience-bullets { margin: 0.8rem 0 0; padding-left: 1.1rem; font-size: 0.95rem; line-height: 1.7; color: var(--body); }
+.experience-bullets li { padding-left: 0.15rem; }
+.experience-bullets li + li { margin-top: 0.4rem; }
+.experience-bullets li::marker { color: var(--accent); }
+.experience-bullets strong { font-weight: 600; }
+.experience-role { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 1rem; }
+.experience-logo { display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; padding: 4px; border: 1px solid var(--rule); border-radius: 4px; background: #fff; }
+.experience-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.experience-role h3 { font-size: 1.2rem; }
+.experience-supervisors { margin: 0.35rem 0 0; color: var(--body); font-size: 0.875rem; }
+.experience-content a { color: var(--accent); text-underline-offset: 3px; }
+@media (max-width: 680px) {
+  .experience-role { grid-template-columns: 36px minmax(0, 1fr); gap: 0.75rem; }
+  .experience-logo { width: 36px; height: 36px; }
+}
