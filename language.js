@@ -42,12 +42,14 @@
     "Aug 2026": "2026 年 8 月",
     "Jul 2026": "2026 年 7 月",
     "Nov 2026": "2026 年 11 月",
+    "🎤 Upcoming presentation · Northeast Normal University": "🎤 即将赴东北师大作报告",
+    "On November 6–8, I will present my six-country MICS study at the Fifth International Forum for Graduate Students in Early Childhood Education, focusing on prioritization and equity in family learning support for preschool children.": "11 月 6–8 日，将在第五届学前教育研究生国际论坛汇报六国 MICS 研究，关注学前儿童家庭学习支持的优先配置与公平性。",
     "🎉 Poster accepted at the AARE 2026 Annual Conference": "🎉 海报获 AARE 2026 年会接收",
-    "(Brisbane, Australia) — nature connectedness and creative personality.": "（澳大利亚布里斯班）——主题为亲自然与创造性人格。",
+    "Nature connectedness and creative personality · Brisbane, Australia.": "亲自然与创造性人格研究 · 澳大利亚布里斯班。",
     "📮 Submitted my master’s application": "📮 已提交硕士申请",
-    "to the University of Macau.": "，申请院校为澳门大学。",
-    "☀️ Summer school": "☀️ 参加暑期学校",
-    "at Peking University on educational technology.": "，在北京大学学习教育技术相关课程。",
+    "Applied to the University of Macau.": "申请院校：澳门大学。",
+    "☀️ Summer school · Peking University": "☀️ 北京大学暑期学校",
+    "Attended the 2026 “Frontiers in Educational Technology” Summer School.": "参加 2026 年“教育技术前沿”暑期学校。",
     "💼 Research experience": "💼 研究经历",
     "Research Assistant · Child Development and Nature-Based Education": "研究助理 · 儿童发展与自然教育",
     "Dec 2024 — Sep 2026 · Supervisors: Prof. Xiaomin Li & Prof. Beijia Tan": "2024 年 12 月—2026 年 9 月 · 导师：Xiaomin Li、Beijia Tan",
@@ -110,6 +112,7 @@
     ", an interactive parent-training prototype about children’s emotions and perspectives.": "，一个帮助家长理解儿童情绪与视角的互动培训原型。",
     "Research output": "研究成果",
     "Publications & presentations.": "论文与会议报告",
+    "Published work": "已发表论文",
     "Selected work. My name is shown in bold.": "部分研究成果，我的名字以粗体标出。论文题名与署名保留正式英文。",
     "Parallel mediation model ·": "平行中介模型 ·",
     "Figure 2": "图 2",
@@ -188,7 +191,7 @@
     let node;
     while ((node = walker.nextNode())) {
       const parent = node.parentElement;
-      if (!parent || parent.closest("script, style, noscript, code, pre, .language-switcher, .language-announcement, .menu-toggle, .methods-position, .lightbox")) continue;
+      if (!parent || parent.closest("script, style, noscript, code, pre, .language-switcher, .language-announcement, .menu-toggle, .methods-position, .lightbox, .pub-authors, .pub-main h3, .pub-citation em, .track-title, .track-meta")) continue;
       if (!originals.has(node)) originals.set(node, node.nodeValue);
       const original = originals.get(node);
       const key = normalize(original);

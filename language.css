@@ -58,6 +58,7 @@ html[lang="zh-CN"] .status { letter-spacing: 0.025em; }
 
 html[lang="zh-CN"] .hero-intro,
 html[lang="zh-CN"] .about-intro p,
+html[lang="zh-CN"] .news-text,
 html[lang="zh-CN"] .research-body > p,
 html[lang="zh-CN"] .method-card p,
 html[lang="zh-CN"] .experience-bullets { line-height: 1.85; }
