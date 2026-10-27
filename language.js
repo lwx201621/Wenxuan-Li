@@ -19,7 +19,6 @@
     "Language": "语言",
     "Primary navigation": "主导航",
     "Wenxuan Li, home": "李文轩，返回首页",
-    "Longitudinal × cross-national research": "微观纵向 × 跨国比较研究",
     "During my undergraduate studies, I have been mentored by": "本科期间，我师从",
     "Prof. Xiaomin Li": "李晓敏老师",
     "Prof. Beijia Tan": "谭蓓佳老师",
