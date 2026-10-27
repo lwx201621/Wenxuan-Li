@@ -1,5 +1,5 @@
 /* One reading column: paper title, quiet byline, and a lightweight status. */
-body.publications-page main { width: min(100%, 760px); margin-inline: auto; }
+body.publications-page main { width: min(100%, 820px); margin-inline: auto; }
 body.publications-page .page-hero { padding: 2.6rem 0 2rem; }
 body.publications-page .page-hero .page-title { font-size: clamp(1.8rem, 3.6vw, 2.2rem); line-height: 1.2; letter-spacing: -0.025em; }
 body.publications-page .page-deck { margin-top: 0.7rem; font-size: 0.9rem; color: #626970; }

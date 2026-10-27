@@ -1723,7 +1723,7 @@ body.refined-page ::selection {
 }
 
 body.refined-page .site-shell {
-  width: min(860px, calc(100% - 48px));
+  width: min(920px, calc(100% - 48px));
 }
 
 /* sticky translucent nav */
@@ -1782,13 +1782,16 @@ body.refined-page .hero {
   display: flex;
   grid-template-columns: none;
   gap: 2.5rem;
-  align-items: flex-start;
+  align-items: stretch;
   padding: 3.6rem 0 1.6rem;
 }
 
 body.refined-page .hero-copy {
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  padding-top: 0.2rem;
+  min-width: 0;
+  padding-top: 0;
   position: static;
 }
 
@@ -1841,12 +1844,17 @@ body.refined-page .hero h1 span {
 }
 
 body.refined-page .hero-intro {
-  max-width: 620px;
+  max-width: none;
   margin: 0.9rem 0 0;
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.7;
   color: var(--body);
+}
+
+body.refined-page .hero-intro a {
+  color: var(--accent);
+  text-underline-offset: 3px;
 }
 
 body.refined-page .hero-meta {
@@ -1994,8 +2002,24 @@ body.refined-page .stat-cell .hint {
 }
 
 /* news */
+body.refined-page .news-window {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 25rem;
+  overscroll-behavior-y: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #b9c9d3 transparent;
+  scrollbar-gutter: stable;
+}
+
+body.refined-page .news-window.is-sized {
+  max-height: none;
+}
+
 body.refined-page .news-list {
   border-top: 0;
+  padding-right: 0.6rem;
 }
 
 body.refined-page .news-item {
@@ -2021,6 +2045,48 @@ body.refined-page .news-date {
   text-transform: none;
   color: var(--accent);
 }
+
+body.refined-page .news-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--rule);
+}
+
+body.refined-page .news-controls[hidden] { display: none; }
+
+body.refined-page .news-scroll-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+body.refined-page .news-arrows { display: flex; gap: 0.4rem; }
+
+body.refined-page .news-arrows button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--accent);
+  font: 500 1rem/1 var(--sans);
+  cursor: pointer;
+}
+
+body.refined-page .news-arrows button:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--highlight);
+}
+
+body.refined-page .news-arrows button:disabled { opacity: 0.3; cursor: default; }
 
 body.refined-page .news-content {
   flex: 1;
@@ -2054,12 +2120,14 @@ body.refined-page .about-intro {
 }
 
 body.refined-page .about-lead {
+  max-width: none;
   margin: 0 0 1rem;
   font-family: var(--serif);
   font-size: 1.15rem;
   font-weight: 500;
   line-height: 1.5;
   color: var(--ink);
+  white-space: normal;
 }
 
 body.refined-page .about-lead::first-letter {
@@ -2067,7 +2135,7 @@ body.refined-page .about-lead::first-letter {
 }
 
 body.refined-page .about-columns {
-  gap: 2rem;
+  gap: 1.1rem 2rem;
 }
 
 body.refined-page .about-columns p {
@@ -2209,7 +2277,7 @@ body.refined-page .footer-links a:hover {
 
 @media (max-width: 780px) {
   body.refined-page .site-shell {
-    width: min(100% - 32px, 860px);
+    width: min(100% - 32px, 920px);
   }
 
   body.refined-page .hero {
@@ -2836,12 +2904,13 @@ body.refined-page .exp-logo img {
   }
 }
 
-/* --- hero: meta in one row; links under the portrait --- */
+/* Equal-height desktop columns, with the research focus below the portrait. */
 body.refined-page .hero-meta {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0;
-  margin-top: 0.85rem;
+  margin-top: auto;
+  padding-top: 0.85rem;
 }
 
 body.refined-page .hero-meta span {
@@ -2862,11 +2931,20 @@ body.refined-page .hero-portrait {
   width: 178px;
 }
 
+body.refined-page .hero-portrait > .eyebrow {
+  width: 100%;
+  margin: 0.8rem 0 0;
+  font-size: 0.68rem;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+}
+
 body.refined-page .hero-portrait .hero-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.95rem;
+  margin-top: auto;
+  padding-top: 0.95rem;
   width: 100%;
 }
 
@@ -2876,6 +2954,11 @@ body.refined-page .hero-portrait .button-link {
 }
 
 @media (max-width: 780px) {
+  body.refined-page .hero-meta {
+    margin-top: 0.85rem;
+    padding-top: 0;
+  }
+
   body.refined-page .hero-portrait {
     width: auto;
     align-items: flex-start;
@@ -2883,15 +2966,14 @@ body.refined-page .hero-portrait .button-link {
 
   body.refined-page .hero-portrait .hero-links {
     max-width: 100%;
+    margin-top: 0.95rem;
+    padding-top: 0;
   }
 }
 
-/* --- representative work: figure left, text right --- */
+/* Representative work reads top to bottom: title, figure, description. */
 body.refined-page .research-item {
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: 2rem;
-  align-items: start;
+  display: block;
   padding: 0;
   border: 0;
 }
@@ -2929,10 +3011,18 @@ body.refined-page .research-body .research-meta {
   }
 }
 
-/* --- representative work: text left, figure right --- */
-body.refined-page .research-item {
-  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+body.refined-page .selected-research .research-body { padding-top: 0; }
+body.refined-page .selected-research .research-body h3 { max-width: none; }
+body.refined-page .selected-research .research-visuals--single {
+  display: block;
+  width: min(100%, 520px);
+  margin: 1rem auto 1.15rem;
 }
+body.refined-page .selected-research .research-figure { margin: 0; padding: 0.75rem; }
+body.refined-page .selected-research .research-figure img { width: 100%; height: auto; max-height: 360px; object-fit: contain; }
+body.refined-page .selected-research .research-figure a { display: block; margin: 0; }
+body.refined-page .selected-research .research-figure a::after { content: none; }
+body.refined-page .selected-research .research-figure figcaption { font-size: 0.8rem; }
 
 /* --- beyond research: music --- */
 body.refined-page .beyond-grid {
