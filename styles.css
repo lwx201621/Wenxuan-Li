@@ -1803,10 +1803,11 @@ body.refined-page .hero-portrait {
 }
 
 body.refined-page .hero-portrait img {
-  width: 170px;
-  height: 170px;
+  width: 216px;
+  height: 216px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 32% center;
   border: 0;
   filter: none;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
@@ -2291,8 +2292,8 @@ body.refined-page .footer-links a:hover {
   }
 
   body.refined-page .hero-portrait img {
-    width: 118px;
-    height: 118px;
+    width: 156px;
+    height: 156px;
   }
 
   body.refined-page .stat-strip {
@@ -2904,7 +2905,7 @@ body.refined-page .exp-logo img {
   }
 }
 
-/* Equal-height desktop columns, with the research focus below the portrait. */
+/* Equal-height desktop columns, with contact links below the portrait. */
 body.refined-page .hero-meta {
   flex-direction: row;
   flex-wrap: wrap;
@@ -2928,7 +2929,7 @@ body.refined-page .hero-portrait {
   flex-direction: column;
   align-items: flex-start;
   flex: none;
-  width: 178px;
+  width: 224px;
 }
 
 body.refined-page .hero-portrait > .eyebrow {
