@@ -27,6 +27,9 @@ body.publications-page .status::before { content: "·"; color: #92999f; font-wei
 body.publications-page .status.under-review { color: #1a5276; background: transparent; }
 body.publications-page .status.under-revision { color: #8b4b13; background: transparent; }
 body.publications-page .status.accepted { color: #456c56; background: transparent; }
+.manuscript-group + .manuscript-group { margin-top: 1.65rem; }
+body.publications-page .status.manuscript-group-label { display: block; margin: 0 0 0.65rem; font-size: 0.9rem; font-weight: 600; scroll-margin-top: 1rem; }
+body.publications-page .manuscript-group-label::before { content: none; }
 body.publications-page .pub-citation { margin: 0.3rem 0 0; color: #626970; font-size: 0.875rem; line-height: 1.65; }
 body.publications-page .pub-doi { display: inline-block; margin: 0 0 0 0.65rem; color: var(--accent); font-size: 0.8rem; text-decoration: none; }
 body.publications-page .pub-doi:hover { text-decoration: underline; text-underline-offset: 3px; }
