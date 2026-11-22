@@ -22,6 +22,7 @@
     "During my undergraduate studies, I have been mentored by": "本科期间，我师从",
     "Prof. Xiaomin Li": "李晓敏教授",
     "Prof. Beijia Tan": "谭蓓佳教授",
+    "Prof. Xiao Yu": "于晓教授",
     ". My research focuses on children’s nature connectedness, psychological resilience, and family relationships. Through micro-level longitudinal research, I examine both differences between children and changes within the same child over time, seeking to understand how they grow within their everyday environments.": "，主要关注儿童的自然联结、心理韧性与家庭关系。我通过微观纵向研究，既考察儿童之间的差异，也追踪同一个儿童随时间的变化，希望理解他们如何在身边的环境中成长。",
     "Studying these micro-level processes has also led me to recognize that children’s immediate environments are not isolated from wider educational and social conditions. I therefore extend my work to cross-national comparisons, examining developmental patterns and opportunities for support across contexts, and connecting individual children’s experiences with a broader educational picture.": "对这些微观过程的关注，也让我逐渐意识到，儿童身边的环境并非孤立存在，而是与更广阔的教育和社会条件相联系。因此，我也将视角延伸到跨国比较，考察不同背景下的发展模式与支持机会，尝试把具体儿童的成长经历，与更大的教育图景联系起来。",
     "and": "和",
@@ -51,6 +52,8 @@
     "Oct 2026": "2026 年 10 月",
     "Apr 2026": "2026 年 4 月",
     "🎉 Three presentations accepted at AERA 2027": "🎉 三项研究获 AERA 2027 年会接收",
+    "🎉 Five posters accepted at SRCD 2027": "🎉 五项海报获 SRCD 2027 接收",
+    "Two of the five accepted posters are first-authored.": "其中两项为第一作者。",
     "Two virtual i-Presentations and one roundtable presentation.": "两项线上 i-Presentation，一项圆桌报告。",
     "🏆 Third Prize · Tao Xingzhi Academic Forum": "🏆 陶行知学术论坛三等奖",
     "Award-winning study: AI use and students’ self-regulated learning in PISA 2025.": "获奖研究：AI 使用方式与学生自我调节学习（PISA 2025）。",
@@ -74,7 +77,9 @@
     "Research Assistant · Child Development and Nature-Based Education Research Group": "研究助理 · 儿童发展与自然教育研究组",
     "Dec 2024 — Present · Supervisors: Prof. Xiaomin Li & Prof. Beijia Tan": "2024 年 12 月至今 · 导师：李晓敏教授、谭蓓佳教授",
     "Research Assistant · Children’s Cognitive Learning and Nature Education Laboratory": "研究助理 · 儿童认知学习与自然教育实验室",
-    "Jan 2026 — Jul 2026 · Supervisor: Prof. Xiao Yu": "2026 年 1—7 月 · 导师：于晓",
+    "Jan 2026 — Jul 2026 · Supervisor: Prof. Xiao Yu": "2026 年 1—7 月 · 导师：于晓教授",
+    "Longitudinal research on nature connectedness, social-emotional development, and family relationships.": "围绕自然联结、社会情绪发展与家庭关系开展纵向研究。",
+    "Systematic reviews and meta-analyses of children’s cognitive learning and nature-related educational experiences.": "参与儿童认知学习与自然教育体验的系统综述和元分析。",
     "Research Assistant · Parent–Child Emotion Communication Research Project": "研究助理 · 亲子情绪沟通研究项目",
     "Jul 2026 — Oct 2026 · Supervisor: Prof. Lixin Ren": "2026 年 7—10 月 · 导师：任丽欣",
     "Full experience & roles →": "查看完整研究经历 →",
@@ -131,6 +136,14 @@
     "Children’s Cognitive Learning and Nature Education Laboratory": "儿童认知学习与自然教育实验室",
     "Screened 600+ records and coded 97 studies, including effect sizes and neuroimaging coordinates.": "筛选 600 余条文献记录，对 97 项研究进行编码，包括效应量与神经影像坐标。",
     "Prepared meta-analysis supplements covering sensitivity checks, meta-regression, publication bias, and GRADE.": "整理元分析补充材料，涵盖敏感性分析、元回归、发表偏倚检验与 GRADE 证据分级。",
+    "Managed, cleaned, and harmonized four-wave longitudinal data from over 1,100 preschool children and their families, including variable construction and sample matching.": "管理、清理并整合 1,100 余名学前儿童及其家庭的四波纵向数据，完成变量构建与纵向样本匹配。",
+    "Examined developmental associations among nature connectedness, social-emotional protective factors, emotional intelligence, creativity, and family relationships.": "考察自然联结、社会情绪保护因素、情绪智力、创造力与家庭关系之间的发展关联。",
+    "Independently specified, estimated, and evaluated over 20 structural equation models, including CLPM, RI-CLPM, latent growth, mediation, and moderation models.": "独立设定、估计并评估 20 余个结构方程模型，涵盖 CLPM、RI-CLPM、潜变量增长模型、中介与调节模型。",
+    "Conducted reliability assessment, model-fit evaluation, longitudinal analyses, and robustness checks to support interpretation of the findings.": "开展信度评估、模型拟合评价、纵向分析与稳健性检验，支持对研究结果的解释。",
+    "Contributed to research design, statistical analysis, interpretation, manuscript preparation, and peer-review responses across six journal manuscripts, including four as second author and two as third author.": "参与六篇期刊稿件的研究设计、统计分析、结果解释、文稿准备与审稿回复，其中四篇为第二作者、两篇为第三作者。",
+    "Contributed to systematic reviews and meta-analyses of children’s cognitive learning and nature-related educational experiences, integrating behavioral and neuroimaging evidence.": "参与儿童认知学习与自然教育体验的系统综述和元分析，整合行为与神经影像证据。",
+    "Prepared methodological and supplementary materials for a separate meta-analysis, including PRISMA documentation, sensitivity analyses, meta-regression, publication-bias assessment, GRADE evaluation, and element-level analyses.": "为另一项元分析准备方法与补充材料，涵盖 PRISMA 文档、敏感性分析、元回归、发表偏倚评估、GRADE 证据分级和要素层面分析。",
+    "Contributed to data extraction, evidence synthesis, methodological documentation, and manuscript preparation for two submitted journal manuscripts, as third and fourth author.": "参与数据提取、证据综合、方法文档与文稿准备，形成两篇已投稿期刊稿件，分别署第三和第四作者。",
     "Jul 2026 — Oct 2026 · Xi’an Jiaotong-Liverpool University": "2026 年 7—10 月 · 西交利物浦大学",
     "Parent–Child Emotion Communication Research Project": "亲子情绪沟通研究项目",
     "Developed a Python tool for coding emotion-related vocabulary in parent–child conversation transcripts.": "开发 Python 工具，对亲子对话文本中的情绪相关词汇进行编码。",
@@ -139,7 +152,8 @@
     "Research output": "研究成果",
     "Publications & presentations.": "论文与会议报告",
     "Published & in-press work": "已发表与待刊论文",
-    "Selected work. My name is shown in bold.": "部分研究成果，我的名字以粗体标出。论文题名与署名保留正式英文。",
+    "Selected work. My name is shown in bold.": "部分研究成果，我的名字以粗体标出。",
+    "Institutionalizing collaborative education: Policy logic, implementation mechanisms, and implications of Japan’s early childhood–primary school bridging program": "制度化协同育人如何可能：日本“幼保小”桥梁项目的政策逻辑、运行机制与启示",
     "Parallel mediation model ·": "平行中介模型 ·",
     "Figure 2": "图 2",
     "Figure 3A · Knowledge × self-efficacy interaction": "图 3A · 教学知识与自我效能的交互作用",
@@ -149,11 +163,14 @@
     "Under revision": "修订中",
     "Under review": "审稿中",
     "In press": "已接收，待刊",
+    "· In Chinese": "· 中文论文",
+    "Japan’s bridging program · Collaborative implementation framework": "日本幼小衔接桥梁项目 · 协同实施机制",
     "Conference presentations": "会议报告",
     "· Singapore.": "· 新加坡。",
     "· Christchurch, New Zealand.": "· 新西兰基督城。",
     "· Brisbane, Australia.": "· 澳大利亚布里斯班。",
     "· Toronto, Canada.": "· 加拿大多伦多。",
+    "· Atlanta, GA, USA.": "· 美国佐治亚州亚特兰大。",
     "Virtual i-Presentation accepted": "线上 i-Presentation 已接收",
     "Roundtable presentation accepted": "圆桌报告已接收",
     "Oral presentation accepted": "口头报告已接收",
@@ -167,6 +184,8 @@
     "Research assistant experience and contributions of Wenxuan Li.": "李文轩的研究助理经历与具体研究贡献。",
     "Selected publications, manuscripts, and conference presentations by Wenxuan Li.": "李文轩的已发表论文、在研稿件与会议报告。",
     "Portrait of Wenxuan Li by the coast": "李文轩在海边的照片",
+    "Enlarge the collaborative implementation framework for Japan’s bridging program": "放大查看日本幼小衔接桥梁项目的协同实施机制图",
+    "Framework connecting local coordination, teacher collaboration and professional support, curriculum design with a PDCA cycle, and family-school-community engagement with quality assurance": "日本幼小衔接实施框架，连接地方统筹、教师协作与专业支持、PDCA 课程循环，以及家校社联动与质量保障",
     "Enlarge Figure 3A, the knowledge and self-efficacy interaction": "放大图 3A：教学知识与自我效能的交互作用",
     "Predicted student-behavior stress by general pedagogical knowledge at low, average, and high classroom-management self-efficacy": "课堂管理自我效能处于低、平均和高水平时，一般教学知识与学生行为压力预测值的关系",
     "Enlarge Figure 4, the Johnson–Neyman plot": "放大图 4：Johnson–Neyman 图",
@@ -207,6 +226,7 @@
 
   // A navigation label is shorter than the publications section heading.
   const navigationTranslations = { Home: "首页", Experience: "经历", Publications: "论文" };
+  const englishContent = ".pub-main h3:not([data-localize-title]), .pub-authors, .pub-citation em, .track-title, .track-meta";
   const storageKey = "wenxuan-site-language";
   const originals = new WeakMap();
   const originalAttributes = new WeakMap();
@@ -227,7 +247,7 @@
     let node;
     while ((node = walker.nextNode())) {
       const parent = node.parentElement;
-      if (!parent || parent.closest("script, style, noscript, code, pre, .language-switcher, .language-announcement, .menu-toggle, .methods-position, .lightbox, .pub-authors, .pub-main h3, .pub-citation em, .track-title, .track-meta")) continue;
+      if (!parent || parent.closest(`script, style, noscript, code, pre, .language-switcher, .language-announcement, .menu-toggle, .methods-position, .lightbox, ${englishContent}`)) continue;
       if (!originals.has(node)) originals.set(node, node.nodeValue);
       const original = originals.get(node);
       const key = normalize(original);
@@ -295,7 +315,7 @@
 
   window.siteLanguage = { t, set: setLanguage, get current() { return current; } };
   // Read English titles and author names in their original language, including on the Chinese page.
-  document.querySelectorAll(".pub-main h3, .pub-authors, .pub-citation em, .track-title, .track-meta").forEach((element) => element.setAttribute("lang", "en"));
+  document.querySelectorAll(englishContent).forEach((element) => element.setAttribute("lang", "en"));
   document.querySelectorAll("[data-language]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.language, { updateURL: true, announce: true }));
   });

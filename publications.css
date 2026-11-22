@@ -33,15 +33,16 @@ body.publications-page .manuscript-group-label::before { content: none; }
 body.publications-page .pub-citation { margin: 0.3rem 0 0; color: #626970; font-size: 0.875rem; line-height: 1.65; }
 body.publications-page .pub-doi { display: inline-block; margin: 0 0 0 0.65rem; color: var(--accent); font-size: 0.8rem; text-decoration: none; }
 body.publications-page .pub-doi:hover { text-decoration: underline; text-underline-offset: 3px; }
-body.publications-page .pub-model { width: min(100%, 560px); min-width: 0; margin: 1.15rem 0 0; padding: 0; border: 0; border-radius: 0; background: transparent; }
+/* Keep figures aligned to the citation, with a shared measure for single images. */
+body.publications-page .pub-model { width: min(100%, 640px); min-width: 0; margin: 1rem 0 0; padding: 0; border: 0; border-radius: 0; background: transparent; }
 body.publications-page .pub-model > a { display: block; padding: 0; border: 0; cursor: zoom-in; }
-body.publications-page .pub-model img { display: block; width: 100%; height: auto; max-height: 260px; border: 0; border-radius: 0; object-fit: contain; }
+body.publications-page .pub-model > a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+body.publications-page .pub-model img { display: block; width: 100%; height: auto; max-height: none; border: 0; border-radius: 0; }
 body.publications-page .pub-model a:hover img { transform: none; box-shadow: none; }
-body.publications-page .pub-model figcaption { margin-top: 0.55rem; color: #737a80; font-size: 0.78rem; line-height: 1.6; text-align: left; }
+body.publications-page .pub-model figcaption { margin-top: 0.55rem; color: var(--muted); font-size: 0.8rem; line-height: 1.6; text-align: left; }
 .pub-model figcaption a { color: inherit; text-underline-offset: 3px; }
-.pub-figure-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); align-items: start; gap: 1rem; width: min(100%, 760px); margin-top: 1.15rem; }
+.pub-figure-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); align-items: start; gap: 1rem; width: min(100%, 720px); margin-top: 1rem; }
 body.publications-page .pub-figure-pair .pub-model { width: 100%; margin: 0; }
-body.publications-page .pub-figure-pair .pub-model img { max-height: none; }
 @media (max-width: 600px) {
   body.publications-page .page-hero { padding: 2rem 0 1.7rem; }
   body.publications-page .page-hero .page-title { max-width: 17ch; font-size: 1.8rem; letter-spacing: -0.015em; }
@@ -50,7 +51,6 @@ body.publications-page .pub-figure-pair .pub-model img { max-height: none; }
   body.publications-page .pub-item { padding-block: 1rem; }
   body.publications-page .pub-main h3, body.publications-page .pub-item--illustrated h3 { font-size: 1.02rem; }
   body.publications-page .pub-authors { font-size: 0.9rem; }
-  body.publications-page .pub-model { margin-top: 1rem; }
-  .pub-figure-pair { grid-template-columns: minmax(0, 1fr); margin-top: 1rem; }
+  .pub-figure-pair { grid-template-columns: minmax(0, 1fr); }
   body.publications-page .pub-figure-pair .pub-model { width: min(100%, 440px); }
 }

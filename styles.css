@@ -2357,6 +2357,13 @@ body.refined-page .glance-line strong {
   color: var(--ink);
 }
 
+body.refined-page .exp-summary {
+  margin: 0.4rem 0 0;
+  color: var(--body);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
 body.refined-page .glance-status {
   color: inherit;
   white-space: nowrap;

@@ -111,7 +111,7 @@ if (filterArea && document.querySelector(".pub-section")) {
 }
 
 /* ---------- lightbox for research figures ---------- */
-const figures = Array.from(document.querySelectorAll(".research-figure a[href$='.png'], .research-figure a[href$='.jpg']"));
+const figures = Array.from(document.querySelectorAll(".research-figure a:is([href$='.png'], [href$='.jpg'], [href$='.svg'])"));
 
 if (figures.length > 0) {
   const box = document.createElement("div");
